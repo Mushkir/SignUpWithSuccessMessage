@@ -1,0 +1,155 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    box-sizing: border-box;
+}
+
+body{
+    background: #29335C;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container{
+    background: #fff;
+    display: flex;
+    justify-content: space-between;
+    /* align-items: center; */
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    width: 800px;
+    padding: 20px;
+    border-radius: 20px;
+}
+
+
+
+.container .leftDiv{
+    padding: 30px 15px;
+    margin: 15px 0;
+    position: relative;
+    /* line-height: em; */
+    /* background: #000; */
+}
+
+h1{
+    text-transform: capitalize;
+    margin-bottom: 15px;
+}
+
+.container .leftDiv p{
+    margin-bottom: 1em;
+    line-height: 1.3em;
+}
+
+.leftDiv ul{
+    padding-left: 1.5em;
+    list-style: url(./images/icon-list.svg);
+    font-size: 14px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    
+}
+
+.leftDiv ul li{
+    line-height: 2em;
+}
+
+.input-group{
+    margin-top: 2em;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.input-group label{
+    /* width: 50%; */
+    font-size: 12px;
+    margin-bottom: 8px;
+}
+
+.input-group input{
+    border: 1px solid rgb(216, 214, 214);
+    outline: none;
+    padding-left: 15px;
+    border-radius: 8px;
+    width: 90%;
+    height: 40px;
+
+    /* font-size: 14px; */
+}
+
+
+.btn-subscribe{
+    margin-top: 1em;
+}
+
+.btn-subscribe button{
+    background: #29335C;
+    color: #fff;
+    border: none;
+    outline: none;
+    width: 90%;
+    height: 35px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.rightDiv img{
+    height: 500px;
+}
+
+#error{
+    color: red;
+    font-size: 12px;
+    position: absolute;
+    right: 56px;
+}
+
+.popup{
+    width: 300px;
+    background: wheat;
+    border-radius: 20px;
+    padding: 20px;
+    position: absolute;
+    top: -30%;
+    left: 50%;
+    transform: translate(-50%,-50%)scale(.1);
+    visibility: hidden;
+}
+
+.popup-open{
+    visibility: visible;
+    top: 50%;
+    transform: translate(-50%,-50%)scale(1);
+}
+
+.popup img{
+    width: 30px;
+    margin-bottom: 15px;
+}
+
+.popup p,
+.popup span{
+    font-size: 11px;
+    margin-top: 20px;
+    line-height: 2em;
+}
+
+.popup button{
+    width: 100%;
+    margin: 15px 0;
+    height: 30px;
+    border: none;
+    background: rgb(131,58,180);
+    background: linear-gradient(90deg, rgba(131,58,180,1) 0%, rgba(253,29,29,1) 28%, rgba(252,176,69,1) 100%);
+    color: #fff;
+    border-radius: 5px;
+    box-shadow: 3px 8px 10px rgba(252,176,69,1);
+    cursor: pointer;
+}
